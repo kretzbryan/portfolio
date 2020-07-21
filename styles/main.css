@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+body {
+    height: 90vh;
+    width: 100vw;
+    position: relative;
+    top: 5vh;
+    margin: 0;
+    background-color: #e4e3e3;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: #e4e3e3;
+}
+
+.header__nav {
+    width: 100vw;
+    height: 5vh;
+    position: fixed;
+    top: 0px;
+    background-color: #3b6978;
+    color: #e4e3e3;
+    padding: 10px 10px;
+}
+
+.page__title {
+    float: left;
+    margin: auto;
+    font-size: 20px;
+}
+
+.nav__container {
+    float: right;
+}
+
+.about__container {
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.section__title {
+    text-align: center;
+}
+.project__container, .skill__container {
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.project__card {
+    font-size: 12px;
+    width: 200px;
+    height: 200px;
+}
+
+footer {
+    width: 100vw;
+    height: 5vh;
+    position: fixed;
+    bottom: 0px;
+    background-color: #3b6978;
+    padding: 10px 10px;
+}
+
+.message__form {
+    display: none;
+}
+
+.message__form__link {
+    float: right;
+}
+
+
+.external__link__container {
+    float: left;
+}
+.landscape {
+    height: 500px;
+    width: 100vw;
+    object-fit: cover;
+}
