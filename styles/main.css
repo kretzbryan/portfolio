@@ -68,7 +68,7 @@ a.nav-link{
     padding-top: 7vh;
 }
 .project__container, .skill__container {
-    margin: 30px auto 75px;
+    margin: 30px auto;
     display: flex;
     justify-content: center;
 }

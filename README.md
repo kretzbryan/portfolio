@@ -6,8 +6,6 @@ Portfolio Project
 - JavaScript
 
 ### User Stories
-- User will be sent to a single page with an about me section, Projects Section, and skills section. 
+- User will be sent to a single page with an about me section, Projects Section, and section with list of technologies I use. 
 - If user clicks on a nav button, user will be sent to its corresponding section.
-- Nav button will highlight or underline when that section is showing on the page.
-- When user hovers over project card, a small slideshow will expand to the side or below showing the project pages.
--the page will have a nav footer with external links to my linkedin and github, as well as a button to toggle an email form.
+-the page will have a nav footer with external links to my linkedin and github, as well as a button to redirect to an email form.
