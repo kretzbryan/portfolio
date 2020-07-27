@@ -21,8 +21,8 @@ html {
     height: 100vh;
 }
 
-a {
-    text-decoration: none;
+i.fab, i.far {
+    font-size: 20px;
     color: #e4e3e3;
 }
 
@@ -33,40 +33,54 @@ a {
     top: 0px;
     background-color: #3b6978;
     color: #e4e3e3;
-    padding: 10px 10px;
+    z-index: 1;
 }
 
 .page__title {
     float: left;
-    margin: auto;
-    font-size: 20px;
+    margin: 0;
+    font-size: 18px;
+    padding: 5px 10px;
 }
 
 .nav__container {
+    display: flex;
     float: right;
 }
 
+a.nav-link{
+    height:100%;
+    font-size: 18px;
+    padding: 5px 10px;
+    color: #e4e3e3;
+}
+
 .about__container {
-    width: 500px;
-    height: 300px;
-    margin: 0 auto;
-    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+    padding-top: 7vh;
 }
 
 .section__title {
     text-align: center;
+    margin-bottom: 0px;
+    padding-top: 7vh;
 }
 .project__container, .skill__container {
-    width: 600px;
-    margin: 0 auto;
+    margin: 30px auto 75px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .project__card {
     font-size: 12px;
     width: 200px;
     height: 200px;
+}
+
+.skill__card {
+    margin: 15px;
 }
 
 footer {
@@ -76,6 +90,7 @@ footer {
     bottom: 0px;
     background-color: #3b6978;
     padding: 10px 10px;
+    z-index: 1;
 }
 
 .message__form {
@@ -93,5 +108,12 @@ footer {
 .landscape {
     height: 500px;
     width: 100vw;
+    object-fit: cover;
+}
+
+.headshot {
+    height: 200px;
+    width: 175px;
+    border-radius: 100%;
     object-fit: cover;
 }
