@@ -66,6 +66,8 @@ i.fab, i.far {
 
 .project__link {
     margin: auto;
+    display: flex;
+    justify-content: center;
 }
 .project__link:hover {
     text-decoration: none;
@@ -73,7 +75,8 @@ i.fab, i.far {
 
 .about__container {
     width: 100%;
-    display: block;
+    display: flex;
+    justify-content: center;
     margin: 10rem auto;
     font-size: 1.4rem;
 }
