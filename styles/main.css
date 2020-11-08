@@ -12,8 +12,7 @@ html {
 }
 
 body {
-    width: 100vw;
-    position: relative;
+
     top: 5vh;
     margin: 0;
     background-color: #e4e3e3;
@@ -65,16 +64,17 @@ i.fab, i.far {
     text-decoration: none;
 }
 
+.project__link {
+    margin: auto;
+}
 .project__link:hover {
     text-decoration: none;
 }
 
 .about__container {
-    height: 22rem;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 10rem;
+    display: block;
+    margin: 10rem auto;
     font-size: 1.4rem;
 }
 
@@ -87,11 +87,14 @@ i.fab, i.far {
     margin: 30px auto;
     display: flex;
     justify-content: center;
+    position: relative;
+
+
 }
 
 .project__card {
     font-size: 1.3rem;
-    width: 100%;
+    width: 80%;
     text-decoration: none;
     border: 1px solid black;
     border-radius: 3px;
@@ -130,7 +133,6 @@ footer {
 }
 
 .headshot {
-    height: 20rem;
     border-radius: 100%;
     object-fit: cover;
 }
@@ -163,7 +165,30 @@ footer {
 
 .project__image {
     width: 80%;
-    position: relative;
-    left: 10%;
-    margin: 1rem;
+    display: block;
+    margin: 1rem auto;
+}
+
+
+@media only screen and (max-width: 450px) {
+
+    .project__card {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .headshot {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .about__container {
+        width: 80%;
+        position: relative;
+        left: 10%;
+    }
+
+    a.nav-link{
+        display: none;
+    }
 }
