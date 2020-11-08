@@ -2,24 +2,28 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    color: black;
+}
+
+
+html {
+    height: 100vh;
+    font-size: 62.5%;
 }
 
 body {
-    height: 90vh;
     width: 100vw;
     position: relative;
     top: 5vh;
     margin: 0;
     background-color: #e4e3e3;
+    font-size: 1.6rem;
 }
 
 body::-webkit-scrollbar {
     display: none;
 }
 
-html {
-    height: 100vh;
-}
 
 i.fab, i.far {
     font-size: 20px;
@@ -28,7 +32,7 @@ i.fab, i.far {
 
 .header__nav {
     width: 100vw;
-    height: 5vh;
+    height: 3.5rem;
     position: fixed;
     top: 0px;
     background-color: #3b6978;
@@ -39,8 +43,9 @@ i.fab, i.far {
 .page__title {
     float: left;
     margin: 0;
-    font-size: 18px;
+    font-size: 1.8rem;
     padding: 5px 10px;
+    color: #e4e3e3;
 }
 
 .nav__container {
@@ -48,22 +53,29 @@ i.fab, i.far {
     float: right;
 }
 
-a.nav-link{
+.nav-link{
     height:100%;
-    font-size: 18px;
+    font-size: 1.8rem;
     padding: 5px 10px;
     color: #e4e3e3;
 }
 
-a.project__link {
+.nav-link:hover {
+    color: #e4e3e3;
+    text-decoration: none;
+}
+
+.project__link:hover {
     text-decoration: none;
 }
 
 .about__container {
+    height: 22rem;
+    width: 100%;
     display: flex;
     justify-content: center;
-    margin: 50px auto;
-    padding-top: 7vh;
+    margin: 10rem;
+    font-size: 1.4rem;
 }
 
 .section__title {
@@ -78,10 +90,11 @@ a.project__link {
 }
 
 .project__card {
-    font-size: 12px;
+    font-size: 1.3rem;
     width: 100%;
-    height: 200px;
     text-decoration: none;
+    border: 1px solid black;
+    border-radius: 3px;
 }
 
 .skill__card {
@@ -90,7 +103,7 @@ a.project__link {
 
 footer {
     width: 100vw;
-    height: 5vh;
+    height: 3.5rem;
     position: fixed;
     bottom: 0px;
     background-color: #3b6978;
@@ -117,8 +130,40 @@ footer {
 }
 
 .headshot {
-    height: 200px;
-    width: 175px;
+    height: 20rem;
     border-radius: 100%;
     object-fit: cover;
+}
+
+.about__text {
+    height: 20rem;
+    margin: auto 1rem;
+    padding: 1rem;
+}
+
+.project__title {
+    padding-top: 1rem;
+}
+.project__title, .project__text {
+    text-align: center;
+}
+
+.summary {
+    width: 80%;
+    border-bottom: 1px solid black;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.stack {
+    padding: .5rem;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.project__image {
+    width: 80%;
+    position: relative;
+    left: 10%;
+    margin: 1rem;
 }
