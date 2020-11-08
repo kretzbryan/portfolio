@@ -198,7 +198,9 @@ footer {
         display: none;
     }
 
-    .headshot {
+    .col-sm-2.headshot {
+        height: 30rem;
+        width: 30rem;
         margin-bottom: 2rem;
     }
 }
