@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^5.0.0",
+    "swup": "^2.0.14"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass ./styles/sass/main.scss ./styles/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kretzbryan/portfolio.git"
+  },
+  "author": "kretzbryan@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kretzbryan/portfolio/issues"
+  },
+  "homepage": "https://github.com/kretzbryan/portfolio#readme"
+}

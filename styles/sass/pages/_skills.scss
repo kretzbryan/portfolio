@@ -1,0 +1,97 @@
+h2.section__title {
+    font-size: 3.5rem;
+    width: 95vw;
+    height: 5rem;
+    text-align: center;
+    display: block;
+    margin-top: 8rem;
+    margin-bottom: 0;
+    word-wrap: break-word;
+    margin: 8rem auto 6rem;
+
+    @include respond(phone) {
+        width: 80vw;
+        word-wrap: break-word;
+    }
+}
+
+.skill__section {
+    width: 80rem;
+    height: 30rem;
+    display: flex;
+    position: relative;
+    top: -20rem;
+    background-color: #090b0c;
+    opacity: .9;
+    border-radius: 5px;
+
+    @include respond(tab-port) {
+        flex-direction: column;
+        height: 60rem;
+        width: 40rem;
+    }
+
+    @include respond(phone) {
+        top: initial;
+    }
+
+}
+
+.skill__card {
+    display: inline-block;
+    width: 30rem;
+    height: 20rem;
+    margin: auto;
+
+    @include respond(tab-port) {
+        display: initial;
+    }
+}
+
+.skill__card h3 {
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+ul {
+    width: 100%;
+    align-self: center;
+    list-style: none;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0;
+    margin: 0;
+
+
+    @include respond(tab-port) {
+        display: block; 
+    }
+}
+
+li {
+    font-size: 2rem;
+    width: 100%;
+}
+
+
+.skill__container {
+    margin: 0 auto ;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    right: 0;
+    width: 95vw;
+    height: 100vh;
+
+    @include respond(phone) {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+.row.skill__container {
+    margin: 0;
+}

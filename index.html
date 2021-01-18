@@ -8,78 +8,25 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script defer src='node_modules/swup/dist/swup.min.js'></script>
+    <script defer src='scripts/main.js' ></script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <header class="header__nav">
-        <p class='page__title'>Bryan Kretz | Software Engineer</p>
+    <header class="nav__header">
         <div class="nav__container">
-            <a class='nav-link' href="#about">About Me</a>
-            <a class='nav-link' href="#projects">Projects</a>
+            <a class='nav-link' href="/about.html">What I'm About</a>
+            <a class='nav-link' href="/projects.html">Projects</a>
+            <a href="/skills.html" class="nav-link">Skills</a>
         </div>
-    </header>
-    <img class='landscape' src="images/sf-landscape.jpg" alt="">
-    <section class="row about__container" id='about'>
-        <img class='col-sm-2 headshot' src="images/headshot.jpg" alt="">
-        <p class='col-sm-5 about__text'>My name is Bryan Kretz. I'm a full-stack software engineer based in the San Francisco Bay Area focusing on MongoDB, Express, Node.js and React. I'm always looking to advance my skills in all aspects of my life, whether that be in software development, learning to make a new dish, or learning new circus skills. If you dont see me behind a computer refining my coding skills, you'll likely find me walking my dog or hanging upside-down somewhere in the city. All of these things will include lots of coffee, though! If you're looking for someone to join your team, feel free to reach out!</p>
-    </section>
-    <h4 id='projects'class='section__title'>Projects</h4>
-    <section class="project__container row">
-        <a class='col-sm-3 project__link' href="https://projectoneblog.herokuapp.com/">
-            <div class="project__card">
-                <img class='project__image' src="images/blog-landing.png" alt="landing screenshot">
-                <h5 class='project__title'>B'Ryan's Blog Stop</h5>
-                <p class='project__text summary'>A personal blogging site in which users can collaborate with each other on various interests. This was a pair programming project with one other person.</p>
-                <p class='project__text stack'>Bootstrap, MongoDB, Express, Node.js</p>
-            </div>
-        </a>
-        <a class='col-sm-3 project__link' href="https://bkretzwayfarer.herokuapp.com/">
-            <div class="project__card">
-                <img class='project__image' src="images/wayfarer-landing.png" alt="landing screenshot">
-                <h5 class='project__title'>Wayfarer Project</h5>
-                <p class='project__text summary'>This is a project which I, and two other people created. It's a Django/Python application for a mock client, built to their specifications. </p>
-                <p class='project__text stack'>Python, Jinja, Django, Pillow, Bootstrap, CSS, Javascript</p>
-            </div>
-        </a>
-        <a class='col-sm-3 project__link' href="https://rednose-multipage.herokuapp.com/">
-            <div class="project__card">
-                <img class='project__image' src="images/andrea-d.png" alt="landing screenshot">
-                <h5 class='project__title'>Rednose</h5>
-                <p class='project__text summary'>This project is a networking platform for circus professionals and clients that want to hire them. This was my final project for school, that I am currently refactoring with react and redux. </p>
-                <p class='project__text stack'>Bootstrap, MongoDB, Express, Node.js, CSS</p>
-            </div>
-        </a>
-    </section>
-    <h4 class="section__title"> Languages/Frameworks/Libraries </h4>
-    <section class="row skill__container">
-        <div class="col-4 skill__card">
-            <h5>Frontend</h5>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>React</li>
-                <li>Bootstrap</li>
-                <li>Materialize</li>
-            </ul>
-        </div>
-        <div class="col-4 skill__card">
-            <h5>Backend</h5>
-            <ul>
-                <li>Python</li>
-                <li>Django</li>
-                <li>PostgresQL</li>
-                <li>MongoDB</li>
-                <li>Node.JS</li>
-                <li>Express</li>
-            </ul>
-        </div>
-    </section>
-
-    <footer class='footer__nav'>
+    </header><div class='darken'></div>
+    <main id='swup' class='transition-main main-title'>
+        <h1>Bryan Kretz</h1>
+        <h2>Full Stack Engineer/Aerialist/Dog Dad</h2>
+    </main>
         <div class="external__link__container">
             <a href="https://www.linkedin.com/in/bryan-kretz/" class="external__link" target="_blank">
                 <i class="fab fa-linkedin"></i>
@@ -91,7 +38,6 @@
                 <i class="far fa-envelope"></i>
             </a>
         </div>
-    </footer>
 </body>
 </html>
 
