@@ -1,12 +1,13 @@
 .project__container {
-    margin: auto ;
+    margin:  auto ;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     right: 0;
     width: 95vw;
     height: 100vh;
+    overflow: scroll;
 
 
     @include respond(phone) {
@@ -23,7 +24,13 @@
     opacity: .9;
     border-radius: 3px;
     margin: 2rem auto;
+
+    &:first-child {
+    
+    }
 }
+
+
 
 .project__title {
     padding-top: 1rem;
@@ -60,6 +67,19 @@
 
         @include respond(phone) {
             display: block;
+             
+        }
+
+        &:first-child {
+            margin-top: 10rem;
+
+            
+
+            @include respond(phone) {
+                margin-top: 100rem;
+                 
+            }
+           
         }
 
     }
