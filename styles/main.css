@@ -262,9 +262,6 @@ li {
 
 .project__container {
   margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   position: fixed;
   right: 0;
   width: 95vw;
@@ -314,7 +311,7 @@ li {
     .project__section {
       display: block; } }
   .project__section:first-child {
-    margin-top: 10rem; }
+    margin-top: 3rem; }
     @media (max-width: 37.5em) {
       .project__section:first-child {
         margin-top: 100rem; } }
