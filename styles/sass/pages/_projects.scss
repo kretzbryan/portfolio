@@ -66,9 +66,9 @@
 		&:first-child {
 			margin-top: 3rem;
 
-			@include respond(phone) {
-				margin-top: 100rem;
-			}
+			// @include respond(phone) {
+			// 	margin-top: 100rem;
+			// }
 		}
 	}
 }

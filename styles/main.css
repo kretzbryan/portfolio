@@ -324,9 +324,6 @@ li {
       display: block; } }
   .project__section:first-child {
     margin-top: 3rem; }
-    @media (max-width: 37.5em) {
-      .project__section:first-child {
-        margin-top: 100rem; } }
 
 .external__link__container {
   position: fixed;
