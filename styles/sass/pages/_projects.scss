@@ -1,83 +1,74 @@
 .project__container {
-    margin:  auto ;
-    position: fixed;
-    right: 0;
-    width: 95vw;
-    height: 100vh;
-    overflow: scroll;
+	margin: auto;
+	position: fixed;
+	right: 0;
+	width: 95vw;
+	height: 100vh;
+	overflow: scroll;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+	&::-webkit-scrollbar {
+		display: none;
+	}
 
-
-    @include respond(phone) {
-        height: 100vh;
-        width: 100vw;
-    }
+	@include respond(phone) {
+		height: 100vh;
+		width: 100vw;
+	}
 }
 
 .project__card {
-    font-size: 1.3rem;
-    width: 30rem;
-    text-decoration: none;
-    background-color: #090b0c;
-    opacity: .9;
-    border-radius: 3px;
-    margin: 2rem auto;
-
-   
+	font-size: 1.3rem;
+	width: 30rem;
+	text-decoration: none;
+	background-color: #090b0c;
+	opacity: 0.9;
+	border-radius: 3px;
+	margin: 2rem auto;
 }
-
-
 
 .project__title {
-    padding-top: 1rem;
+	padding-top: 1rem;
 }
-.project__title, .project__text {
-    text-align: center;
+.project__title,
+.project__text {
+	text-align: center;
 }
 
 .summary {
-    width: 80%;
-    border-bottom: 1px solid black;
-    margin: 0 auto;
-    padding: 1rem;
+	width: 80%;
+	border-bottom: 1px solid black;
+	margin: 0 auto;
+	padding: 1rem;
 }
 
 .stack {
-    padding: .5rem;
-    width: 60%;
-    margin: 0 auto;
+	padding: 0.5rem;
+	width: 60%;
+	margin: 0 auto;
 }
 .project__image {
-    width: 80%;
-    display: block;
-    margin: 1rem auto;
+	width: 80%;
+	display: block;
+	margin: 1rem auto;
 }
 
 .project {
+	&__section {
+		width: 100%;
+		display: flex;
+		margin: 3rem auto;
 
-    &__section {
+		@include respond(phone) {
+			display: block;
+		}
 
-        width: 100%;
-        display: flex;
-        margin: 3rem auto;
+		&:first-child {
+			margin-top: 3rem;
 
-        @include respond(phone) {
-            display: block;
-             
-        }
-
-        &:first-child {
-            margin-top: 3rem;
-
-            
-
-            @include respond(phone) {
-                margin-top: 100rem;
-                 
-            }
-           
-        }
-
-    }
-
-    
+			@include respond(phone) {
+				margin-top: 100rem;
+			}
+		}
+	}
 }
