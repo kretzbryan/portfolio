@@ -4,7 +4,7 @@
   "description": "portfolio",
   "main": "index.js",
   "dependencies": {
-    "node-sass": "^5.0.0",
+    "node-sass": "^7.0.0",
     "swup": "^2.0.14",
     "trim-newlines": "^4.0.2"
   },
